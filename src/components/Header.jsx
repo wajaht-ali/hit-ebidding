@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+import logo from "../assets/hit_logo.png";
+import "../styles/Header.scss";
+
 
 const Header = () => {
   return (
-    <div>
-        This is Header
+    <div className='header'>
+      <Link to="/">Home</Link>
     </div>
   )
 }

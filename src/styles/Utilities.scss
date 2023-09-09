@@ -1,4 +1,6 @@
-$primary-color: "#aa1e23";
+$primary-color: #aa1e23;
+$secondary-color: #3f444a;
+$tertiary-color: white;
 
 
 * {
@@ -7,6 +9,7 @@ $primary-color: "#aa1e23";
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    scroll-behavior: smooth;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
