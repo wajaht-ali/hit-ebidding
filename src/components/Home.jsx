@@ -3,7 +3,7 @@ import "../styles/Home.scss";
 const Home = () => {
   return (
     <div className='home'>
-      Home
+      <h1>HIT Ebidding System using React JS.</h1>
     </div>
   )
 }
