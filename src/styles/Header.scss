@@ -4,6 +4,7 @@
     height: 20vh;
     width: 100%;
     background-color: whitesmoke;
+    position: relative;
 
     >.container {
         height: 100%;
@@ -43,6 +44,9 @@
     .navbar {
         height: 10vh;
         width: 100%;
+        position: sticky;
+        top: 0;
+        left: 0;
         background-color: $secondary-color;
 
         nav {

@@ -11,10 +11,10 @@ $tertiary-color: white;
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-}
 
-.active {
-    font-weight: bold;
-    color: #aa1e23;
+    .active {
+        font-weight: bold;
+        color: $primary-color;
+    }
 }
 
