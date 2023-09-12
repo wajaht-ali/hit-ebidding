@@ -1,16 +1,18 @@
 @import "Utilities.scss";
 
 .header {
-    height: 20vh;
-    width: 100vw;
+    height: 25vh;
+    width: 100%;
     // border: 2px solid #333;
-    box-shadow: 3px 5px 5px #333;
+    box-shadow: 3px 5px 5px gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #f6f6f6;
-    padding: 1rem;
+    position: sticky;
+    top: 0;
+    // padding: 1rem;
 
     >.main-header {
         height: 80%;
@@ -44,6 +46,39 @@
                 text-align: center;
             }
         }
-
     }
+
+    >nav {
+        height: auto;
+        width: 100%;
+        background-color: $secondary-color;
+
+        >ul {
+            display: flex;
+            padding: .5rem;
+            justify-content: space-around;
+            align-items: center;
+
+            li .link {
+                color: #fff;
+                font-weight: 600;
+                font-size: 10.6px;
+                &:hover {
+                    border-bottom: 2px solid $tertiary-color;
+                    color: $primary-color;
+                    border-radius: 3px 3px 3px 3px;
+                    transition: .3s all ease;
+                    transform-origin: center;
+                }
+
+            }
+
+            li .active {
+                color: #FE0E0F;
+                border-bottom: 2px solid $tertiary-color;
+                border-radius: 3px 3px 3px 3px;
+            }
+        }
+    }
+
 }
