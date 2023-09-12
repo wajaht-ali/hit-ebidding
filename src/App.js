@@ -9,12 +9,10 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Header />
-        {/* <Home /> */}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        <Footer />
+        <Routes>
+          <Route />
+          <Route />
+        </Routes>
       </BrowserRouter>
     </div>
   );

@@ -2,76 +2,48 @@
 
 .header {
     height: 20vh;
-    width: 100%;
-    background-color: whitesmoke;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    width: 100vw;
+    // border: 2px solid #333;
+    box-shadow: 3px 5px 5px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding: 1rem;
 
-
-    >.container {
-        height: 100%;
+    >.main-header {
+        height: 80%;
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
-        // border: 2px solid #333;
 
         >.logo img {
-            width: 100px;
             height: 100px;
+            width: 100px;
         }
 
-        >.main-heading {
+        >.headings {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-tracks: center;
             align-items: center;
+            text-decoration: none;
 
             h1 {
                 text-transform: uppercase;
-                color: $secondary-color;
 
                 span {
                     color: $primary-color;
                 }
             }
 
-            p {
-                opacity: .55;
+            >p {
+                text-align: center;
             }
         }
-    }
 
-    .navbar {
-        height: 10vh;
-        width: 100%;
-        background-color: $secondary-color;
-
-        nav {
-
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            position: sticky;
-            top: 0;
-
-            ul {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-
-                li .links {
-                    letter-spacing: 1px;
-                    color: white;
-                }
-            }
-        }
     }
 }
