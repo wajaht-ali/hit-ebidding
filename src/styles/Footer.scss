@@ -3,8 +3,8 @@
 .footer {
     height: 75vh;
     width: 100%;
-    background-color: $secondary-color;  
-    
+    background-color: $secondary-color;
+
     >.top {
         height: 90%;
         width: 100%;
@@ -14,13 +14,36 @@
 
         .box {
             height: 100%;
-            width: 50%;
+            width: 33.3%;
             border: 2px solid #333;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-items: center;
+            padding: .5rem;
 
+            >.head {
+                h3 {
+                    font-weight: 900;
+                    border-bottom: 2px solid $primary-color;
+                    width: 40%;
+                }
+            }
+
+            >.bottom {
+                // height: 70%;
+                // width: 100%;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    li {
+                        margin: .5rem 0;
+                    }
+                }
+
+            }
         }
     }
 }
