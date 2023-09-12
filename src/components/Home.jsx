@@ -16,9 +16,8 @@ const Home = () => {
         autoPlay
         showStatus = {false}
         showThumbs = {false}
-        interval = {3000}
+        interval = {3000}className='slider'>
 
-          className='slider'>
           <div>
             <img src={img1} alt='carousel-img' />
           </div>
@@ -30,8 +29,14 @@ const Home = () => {
           </div>
         </Carousel>
       </div>
+      <div className="welcome-banner">
+        <div className="welcome-msg">
+          <h3>Welcome to <span>Heavy Industries Taxila</span></h3>
+          <p>Heavy Industries Taxila was envisaged in the early seventies and its first production unit i.e. Heavy Rebuild Factory     (T-Series) went into production in 1980. This was followed in the early nineties by a number of other factories and today HIT has grown into a military industrial complex which consists of Six Major Production Units, Support Facilities and Administrative Establishment.</p>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Home
+export default Home;

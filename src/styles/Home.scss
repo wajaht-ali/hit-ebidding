@@ -1,12 +1,13 @@
 @import "../styles/Utilities.scss";
 
 .home {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 
     >.carousel {
-        height: 100%;
+        height: auto;
         width: 100%;
+        z-index: -1;
 
         >.slider {
             height: 100%;
@@ -15,8 +16,49 @@
             div {
                 height: 100%;
                 width: 100%;
+
+                img {
+                    height: 500px;
+                    width: 100%;
+                }
             }
         }
+    }
 
+    >.welcome-banner {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: url("../assets/bg-msg.jpg");
+        align-items: center;
+        
+        &::before {
+            opacity: .5;
+        }
+
+        >.welcome-msg {
+            height: 80%;
+            width: 70%;
+            padding: 1rem;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            h3 {
+                margin: 1rem;
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            p {
+                text-align: justify;
+                font-size: 15px;
+            }
+        }
     }
 }
