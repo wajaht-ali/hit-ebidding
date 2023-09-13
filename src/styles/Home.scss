@@ -33,7 +33,7 @@
         justify-content: center;
         background: url("../assets/bg-msg.jpg");
         align-items: center;
-        
+
         &::before {
             opacity: .5;
         }
@@ -50,6 +50,7 @@
 
             h3 {
                 margin: 1rem;
+
                 span {
                     color: $primary-color;
                 }

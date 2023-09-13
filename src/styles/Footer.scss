@@ -53,7 +53,7 @@
                     li {
                         margin: .5rem 0;
                         border-bottom: 1px solid #333;
-                        padding: 2px;
+                        padding: 4px 0;
                         color: white;
 
                         &:hover {
@@ -61,6 +61,7 @@
                             transition: .5s ease-in;
                             transform-origin: left;
                         }
+
                         a {
                             color: white;
                         }
@@ -134,6 +135,7 @@
                             font-size: 1.2rem;
                             margin-right: .5rem;
                             color: $primary-color;
+                            font-weight: 900;
                         }
                     }
                 }
@@ -143,6 +145,7 @@
 
     >.bottom {
         padding: 5px;
+
         p {
             color: $tertiary-color;
             padding: 0 1.5rem;
