@@ -1,7 +1,7 @@
 @import "Utilities.scss";
 
 .header {
-    height: 25vh;
+    height: 30vh;
     width: 100%;
     // border: 2px solid #333;
     box-shadow: 3px 5px 5px gray;
@@ -16,7 +16,7 @@
     // padding: 1rem;
 
     >.main-header {
-        height: 80%;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -159,6 +159,29 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            .logo img {
+                // margin: 5px 0;
+                height: 80px;
+                width: 80px;
+            }
+
+            .headings {
+                display: flex;
+                flex-direction: column;
+                justify-tracks: center;
+                align-items: center;
+                text-align: center;
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
         }
+    }
+
+    nav {
+        height: 100%;
+        width: 100%;  
     }
 }
