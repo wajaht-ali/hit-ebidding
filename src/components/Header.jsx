@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../assets/hit_logo.png";
 import "../styles/Header.scss";
 import { NavLink } from 'react-router-dom';
-import { MdOutlineArrowDropDown, MdArrowDownward } from "react-icons/md";
+import { MdOutlineArrowDropDown } from "react-icons/md";
 // import { useState } from 'react';
 
 const Header = () => {
