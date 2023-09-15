@@ -2,6 +2,8 @@ import React from 'react'
 import logo from "../assets/hit_logo.png";
 import "../styles/Header.scss";
 import { NavLink } from 'react-router-dom';
+import { MdOutlineArrowDropDown, MdArrowDownward } from "react-icons/md";
+// import { useState } from 'react';
 
 const Header = () => {
   return (
@@ -19,7 +21,16 @@ const Header = () => {
         <ul>
           <li><NavLink to={"/"} className={"link"}>Home</NavLink></li>
           <li><NavLink to={"/about"} className={"link"}>About</NavLink></li>
-          <li><NavLink to={"/services"} className={"link"}>Services</NavLink></li>
+          <li>Services <MdOutlineArrowDropDown />
+            <ul className='submenu'>
+              <li><NavLink className="link">Link 1</NavLink></li>
+              <li><NavLink className="link">Link 2</NavLink></li>
+              <li><NavLink className="link">Link 3</NavLink></li>
+              <li><NavLink className="link">Link 4</NavLink></li>
+            </ul>
+          </li>
+          {/* <li><NavLink to={"/services"} className={"link"}>Services <MdOutlineArrowDropDown /></NavLink>
+          </li> */}
           <li><NavLink to={"/ebidding"} className={"link"}>Ebidding</NavLink></li>
           <li><NavLink to={"/contact-us"} className={"link"}>Contact</NavLink></li>
         </ul>
