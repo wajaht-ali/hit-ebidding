@@ -51,7 +51,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="box">
+        <div className="box box-3">
           <div className="head">
             <h3>OTHERS</h3>
             <div className="bdr"></div>
