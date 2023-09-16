@@ -174,7 +174,7 @@
 
             .msg {
                 height: 80%;
-                width: 80%;
+                width: 85%;
                 padding: 1rem;
                 display: flex;
                 flex-direction: column;
@@ -190,12 +190,12 @@
                     margin: 0 auto;
                     background-color: $primary-color;
                     height: 15%;
-                    width: 50%;
+                    width: 55%;
                     color: #fff;
                 }
 
                 h2 {
-                    
+
                     text-transform: uppercase;
 
                     span {
@@ -206,6 +206,54 @@
                 p {
                     text-align: justify;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .bottom {
+
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .msg {
+            height: 100%;
+            width: 90%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+            line-height: 2rem;
+            background: rgb(224, 224, 224);
+            font-size: 15px;
+
+            h3 {
+                text-transform: uppercase;
+                padding: .5rem;
+                margin: 0 auto;
+                background-color: $primary-color;
+                height: 15%;
+                width: 60%;
+                color: #fff;
+            }
+
+            h2 {
+
+                text-transform: uppercase;
+
+                span {
+                    color: $primary-color;
+                }
+            }
+
+            p {
+                text-align: justify;
             }
         }
     }
