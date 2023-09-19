@@ -6,6 +6,9 @@ import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Container } from '@mui/material';
+import FirstStep from "../stepper/FirstStep.jsx";
+import SecondStep from "../stepper/SecondStep.jsx";
+import ThirdStep from "../stepper/ThirdStep.jsx";
 
 const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
 
@@ -91,7 +94,10 @@ export default function HorizontalLinearStepper() {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
+          {/* <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography> */}
+          { activeStep === 0 && <FirstStep />} 
+          { activeStep === 1 && <SecondStep />} 
+          { activeStep === 2 && <ThirdStep />} 
           <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
             <Button
               color="inherit"
