@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
+import "../styles/Stepper.css";
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
@@ -11,6 +12,7 @@ import SecondStep from "../stepper/SecondStep.jsx";
 import ThirdStep from "../stepper/ThirdStep.jsx";
 
 const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
+
 
 export default function HorizontalLinearStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
@@ -59,7 +61,7 @@ export default function HorizontalLinearStepper() {
   };
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" className='stepperForm'>
     <Box sx={{ width: '100%' }}>
       <Stepper activeStep={activeStep}>
         {steps.map((label, index) => {
