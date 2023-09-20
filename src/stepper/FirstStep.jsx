@@ -32,20 +32,22 @@ const FirstStep = () => {
           </div>
 
 
-          <label htmlFor="email">Email: </label>
-          <input type="email" id='email' />
+          <div className="data">
+            <label htmlFor="email">Email: </label>
+            <input type="email" id='email' />
+          </div>
 
-      <div className='data'>
-        <label htmlFor="tax-no">National Tax No: </label>
-        <input type="number" id='tax-no' />
-      </div>
+          <div className='data'>
+            <label htmlFor="tax-no">National Tax No: </label>
+            <input type="number" id='tax-no' />
+          </div>
 
-      <div className="data">
-        <label htmlFor="sales-no">Sales Tax No: </label>
-        <input type="number" id='sales-no' />
-      </div>
+          <div className="data">
+            <label htmlFor="sales-no">Sales Tax No: </label>
+            <input type="number" id='sales-no' />
+          </div>
 
-    </form>
+        </form>
       </div >
     </div >
   )
