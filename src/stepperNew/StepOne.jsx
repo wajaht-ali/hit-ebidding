@@ -74,7 +74,7 @@ const FirstStep = () => {
 
           <div className="data">
             <h3>Firm's Management Record: </h3>
-            <textarea name="management-record" cols="60" rows="5" placeholder="Enter firm's Management details..."></textarea>
+            <textarea name="management-record" cols="100" rows="5" placeholder="Enter firm's Management details e.g, Who is manager of firm, owner's bio-data..."></textarea>
           </div>
 
 
