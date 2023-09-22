@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import Footer from "./components/Footer";
-import Stepper from "../src/stepper/Stepper.tsx";
+import Stepper from "./stepperNew/Stepper.tsx";
 import "@mui/material/Container";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
