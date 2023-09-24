@@ -1,2 +1,23 @@
 @import "../styles/Utilities.scss";
 
+.step-three {
+    height: 100%;
+    width: 100%;
+
+    form {
+        margin: .5rem 0;
+        >.data {
+            display: flex;
+            flex-direction: column;
+            padding: .3rem 0;
+            textarea {
+                padding: .5rem;
+            }
+            input {
+                width: 30%;
+                margin-top: .2rem;
+                padding: .2rem;
+            }
+        }
+    }
+}

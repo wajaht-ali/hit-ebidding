@@ -18,9 +18,10 @@ import "../styles/Stepper.scss";
 import "../styles/StepOne.scss";
 import "../styles/StepTwo.scss";
 import "../styles/StepThree.scss";
+// import { style } from '@mui/system';
 
 
-const steps = ['Select campaign settings', 'Create an ad group', 'Create an ad'];
+const steps = ['Firm Basic Information', 'Create an ad group', 'Create an ad'];
 
 export default function HorizontalLinearStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
